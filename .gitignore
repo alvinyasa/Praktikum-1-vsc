@@ -1,0 +1,13 @@
+# Version Control System - Praktikum 1
+# Profil Mahasiswa: Alvin Yasa Shahada Putra
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.tmp

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Alvin Yasa Shahada Putra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="glow-sphere sphere-1"></div>
+        <div class="glow-sphere sphere-2"></div>
+    </div>
+
+    <header>
+        <div class="top-nav">
+            <div class="brand">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>VCS Profile</span>
+            </div>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-card">
+            <!-- Header Banner -->
+            <div class="card-banner">
+                <span class="badge badge-course"><i class="fa-solid fa-graduation-cap"></i> Praktikum Version Control System</span>
+            </div>
+
+            <!-- Profile Image Container -->
+            <div class="avatar-wrapper">
+                <div class="avatar-ring">
+                    <img src="profile.jpg" alt="Foto Profil Alvin Yasa Shahada Putra" class="profile-avatar">
+                </div>
+                <div class="status-indicator" title="Online / Active"></div>
+            </div>
+
+            <!-- Profile Main Details -->
+            <div class="profile-header">
+                <h1 class="user-name">Alvin Yasa Shahada Putra</h1>
+                <p class="user-role"><i class="fa-solid fa-user-graduate"></i> Mahasiswa Teknik Informatika</p>
+            </div>
+
+            <!-- Info Grid -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div class="info-content">
+                        <span class="info-label">NIM</span>
+                        <div class="nim-container">
+                            <span class="info-value nim-value" id="nimText">G.231.23.0146</span>
+                            <button class="copy-btn" id="copyNimBtn" title="Salin NIM">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <div class="info-content">
+                        <span class="info-label">Mata Kuliah</span>
+                        <span class="info-value">Version Control System</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="info-content">
+                        <span class="info-label">Kelompok</span>
+                        <span class="info-value badge-group">A1</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="info-content">
+                        <span class="info-label">Version Control</span>
+                        <span class="info-value">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action / Social Links -->
+            <div class="profile-actions">
+                <button class="btn btn-primary" id="btnGreeting">
+                    <i class="fa-regular fa-hand"></i> Sapa Alvin
+                </button>
+                <a href="https://github.com/alvinyasa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-brands fa-github"></i> GitHub Profile
+                </a>
+            </div>
+
+            <!-- Toast notification for copy alert -->
+            <div id="toast" class="toast">NIM berhasil disalin!</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alvin Yasa Shahada Putra &bull; Praktikum Version Control System (Kelompok A1)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
